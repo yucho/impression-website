@@ -1,0 +1,20 @@
+/* Overwrite w3.css */
+body,h1,h2{font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+p {line-height: 2}
+.bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.bgimg {background-image: url("/images/open-table-01.jpg")}
+.bgimg2 {background-image: url("/images/open-table-02.jpg")}
+.logo {
+    min-width: 320px;
+    width: 60%;
+}
+@media (max-width: 601px) {
+html,body{font-size: 14px;}
+h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:12px}.w3-serif{font-family:serif}
+.w3-xlarge{font-size:16px!important}.w3-xxlarge{font-size:20px!important}.w3-xxxlarge{font-size:28px!important}.w3-jumbo{font-size:36px!important}
+}

@@ -1,5 +1,7 @@
 ---
 files:
 - styles/base/normalize.css
+- styles/base/w3.css
+- styles/base/w3-custom.css
 ---
 // Concatenated css in correct order

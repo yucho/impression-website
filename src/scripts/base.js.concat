@@ -1,5 +1,6 @@
 ---
 files:
 - scripts/base/log.js
+- scripts/base/modernizr-custom.js
 ---
 // Concatenated js in correct order
