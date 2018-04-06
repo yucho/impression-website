@@ -7,14 +7,22 @@ p {line-height: 2}
     background-position: center;
     background-size: cover;
 }
-.bgimg {background-image: url("/images/open-table-01.jpg")}
-.bgimg2 {background-image: url("/images/open-table-02.jpg")}
+.bgimg {background-image: url("/images/floor.jpg")}
+.bgimg2 {background-image: url("/images/food.jpg")}
 .logo {
     min-width: 320px;
     width: 60%;
 }
+.w3-sauce {width:40%;min-width:320px;float:left;margin-right:32px;padding-top: 1em;}
 @media (max-width: 601px) {
 html,body{font-size: 14px;}
 h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:12px}.w3-serif{font-family:serif}
 .w3-xlarge{font-size:16px!important}.w3-xxlarge{font-size:20px!important}.w3-xxxlarge{font-size:28px!important}.w3-jumbo{font-size:36px!important}
+.w3-sauce{
+    width: 100%;
+    height: 80vw;
+    margin: auto;
+    float: none;
+    object-fit: cover;
+    object-position: 50% 90%;}
 }

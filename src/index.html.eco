@@ -23,16 +23,16 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 </head>
-<body>
+<body class="w3-orange">
     <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Header / Top -->
-    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="top">
+    <header class="w3-display-container w3-wide bgimg" id="top">
       <div class="w3-display-middle w3-text-white w3-center">
         <h1 class="w3-jumbo"><img class="logo" src="images/impression-logo.png" alt="Impression"></h1>
-        <h2>Casual French Dining and Lounge Bar</h2>
+        <h3>Casual French Dining and Lounge Bar</h3>
       </div>
     </header>
 
@@ -47,11 +47,11 @@
     </div>
 
     <!-- About / Impression -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="about">
+    <div class="w3-container w3-padding-64 w3-orange" id="about">
       <div class="w3-content">
-        <h1 class="w3-center w3-text-grey"><b>Bringing people together</b></h1>
-        <img class="w3-round" src="images/flowers.jpg" style="width:100%;margin:32px 0">
-        <p>In France, food and wine are inseparable partners that support each other. That is why when a good combination is found, the French celebrates the joyful discovery by saying that the food and wine had <i>"un mariage heureux"</i>, or "a happy marriage." At Impression, however, we do not limit the weddings to occur only between food and wine. The ambiance, our culinarily inclined and friendly staffs, and the most important of all, you and your beloved ones are all part of the equation when it comes to the dining experience we have to offer. Casual, family-friendly, yet elegant, we aim to challenge the status quo that French cuisine is only for the social elites and romantic investments, but rather for anyone who is looking for having a good time, much like how it is in France. Come to us, and we will welcome you with unbelievable sunset view of Half Moon Bay, great food and wine, and perhaps, with great hope and endeavor, make the deepest <i>Impression</i> upon you.
+        <h1 class="w3-center w3-wide">Bringing people together</h1>
+        <img class="w3-round w3-sauce" src="images/sauce.jpg">
+        <p>In France, food and wine are inseparable partners that work together to complete each other. That is why when a good pairing is found, the French celebrates the joyful discovery by saying that the food and wine had <i>"un mariage heureux"</i>, or "a happy marriage." At Impression, however, we do not limit the weddings to occur only between food and wine. The ambiance, our culinarily inclined and friendly staffs, and the most important of all, you and your beloved ones are all part of the equation when it comes to the dining experience we have to offer. Casual, family-friendly, yet elegant, we aim to challenge the status quo that French cuisine is only for the social elites and romantic investments, but rather for anyone who is looking for having a good time, much like how it is in France. Come to us, and we will welcome you with unbelievable sunset view of Half Moon Bay, great food and wine, and perhaps, with sincerity, make the deepest <i>Impression</i> upon you.
         </p><br>
         <p class="w3-center"><a href="#reservation" class="w3-button w3-black w3-round w3-padding-large w3-large">Make Reservations</a></p>
       </div>
@@ -60,23 +60,24 @@
     <!-- Background Photo -->
     <div class="w3-display-container bgimg2">
       <div class="w3-display-middle w3-text-white w3-center">
-        <h1 class="w3-jumbo">Bon appétit.</h1><br>
-        <h2>The pleasure is ours.</h2>
+        <h1 class="w3-jumbo"><b>Bon appétit.</b></h1><br>
       </div>
     </div>
 
     <!-- Reservation -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="reservation">
-      <h1>Make a reservation</h1>
-      <p class="w3-large">We take reservations both over the phone and through Open Table app.</p>
+    <div class="w3-container w3-padding-64 w3-orange w3-center" id="reservation">
+      <h1 class="w3-wide">Make a reservation</h1>
+      <p>We take reservations both over the phone (650) 560-0318 and through <i>Open Table</i>.</p>
       <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1009825&domain=com&type=standard&theme=standard&lang=en&overlay=false&iframe=true'></script>
     </div>
 
     <!-- Location Info -->
-    <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="location">
-      <h1>Where we are</h1>
-      <p class="w3-large">260 Capistrano Rd Half Moon Bay, CA 94019</p>
-      <p class="w3-large">impression@inshou.group</p>
+    <div class="w3-container w3-padding-64 w3-orange w3-center" id="location">
+      <h1 class="w3-wide">Where we are</h1>
+      <p>260 Capistrano Rd Half Moon Bay, CA 94019</p>
+      <p>(650) 560-0318</p>
+      <p>impression@inshou.group</p>
+      <p>https://impression.inshou.group</p>
     </div>
 
 </body>
