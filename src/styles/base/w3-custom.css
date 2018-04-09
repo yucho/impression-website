@@ -26,3 +26,6 @@ h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-
     object-fit: cover;
     object-position: 50% 90%;}
 }
+.w3-table-center {
+    margin: 0 auto;
+}
