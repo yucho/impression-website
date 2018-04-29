@@ -5,7 +5,8 @@
   "description": "Source code for Impression website.",
   "main": "index.coffee",
   "scripts": {
-    "build": "coffee index.coffee",
+    "build": "metalsmith",
+    "serve": "coffee index.coffee --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "homepage": "https://github.com/yucho/impression-website#readme",
   "dependencies": {
     "clean-css": "^4.1.11",
+    "jsonfile": "^4.0.0",
     "jstransformer-eco": "^0.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-clean-css": "^6.0.0",
@@ -32,6 +34,12 @@
     "metalsmith-uglify": "^2.2.0"
   },
   "devDependencies": {
-    "coffeescript": "^2.2.4"
+    "coffeescript": "^2.2.4",
+    "metalsmith-nestedlayouts": "^2.2.2",
+    "metalsmith-partial": "^0.1.0",
+    "metalsmith-serve": "0.0.7",
+    "metalsmith-sitemap": "^1.2.0",
+    "metalsmith-uglify": "^2.2.0",
+    "yargs": "^11.0.0"
   }
 }

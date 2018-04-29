@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Site Properities -->
-  <title><%- @site.title %></title>
-  <meta name="author" content="<%= @site.author %>" />
-  <meta name="description" content="<%= @site.description %>" />
-  <meta name="keywords" content="<%= @site.keywords %>" />
-
-  <!-- Styles & Scripts -->
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,600">
-
-  <script src="scripts/base.js"></script>
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-</head>
-<body class="w3-orange">
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
+---
+layout: default.html.eco
+---
   <!-- Header / Top -->
   <header class="w3-display-container w3-wide bgimg" id="top">
     <div class="w3-display-middle w3-text-white w3-center">
@@ -88,6 +61,3 @@
       </tr>
     </table>
   </div>
-
-</body>
-</html>
