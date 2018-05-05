@@ -7,29 +7,42 @@
       "url": "https://impression.inshou.group"
     }
   },
-  "plugins": {
-    "./lib/prebuild.js": true,
-    "metalsmith-concat-convention": {
-      "extname": ".concat"
+  "plugins": [
+    {
+      "./lib/prebuild.js": true
     },
-    "metalsmith-clean-css": {
-      "files": ["src/scripts/**/*.css"]
+    {
+      "metalsmith-concat-convention": {
+        "extname": ".concat"
+      }
     },
-    "metalsmith-uglify": {
-      "sameName": true,
-      "uglify": {"sourceMap": false}
+    {
+      "metalsmith-clean-css": {
+        "files": ["src/scripts/**/*.css"]
+      }
     },
-    "metalsmith-partial": {
-      "directory": "./lib/partials",
-      "engine": "eco"
+    {
+      "metalsmith-uglify": {
+        "sameName": true,
+        "uglify": {"sourceMap": false}
+      }
     },
-    "metalsmith-nestedlayouts": {
-      "directory": "lib/layouts",
-      "pattern": "**/*.@(eco|html)"
+    {
+      "metalsmith-jstransformer-partials": true
     },
-    "metalsmith-in-place": true,
-    "metalsmith-sitemap": {
-      "hostname": "https://impression.inshou.group"
+    {
+      "metalsmith-nestedlayouts": {
+        "directory": "lib/layouts",
+        "pattern": "**/*.@(eco|html)"
+      }
+    },
+    {
+      "metalsmith-in-place": true
+    },
+    {
+      "metalsmith-sitemap": {
+        "hostname": "https://impression.inshou.group"
+      }
     }
-  }
+  ]
 }

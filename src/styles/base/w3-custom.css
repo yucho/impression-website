@@ -1,31 +1,81 @@
 /* Overwrite w3.css */
+
+/* Thematic fonts */
 body,h1,h2{font-family: "Raleway", sans-serif}
+
+/* Full view window page */
 body, html {height: 100%}
+
+/* Paragraphs */
 p {line-height: 2}
-.bgimg, .bgimg2 {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+
+/* Background color for blue-tinted top image */
+.w3-blue-top {color:#000!important;background-color:#222985!important}
+
+/* Gold background */
+.w3-gold {color:#000!important;background-color:#ffd700!important}
+
+/* Blue background and gold text */
+.w3-blue {color:#ffd700!important;background-color:#0050a4!important}
+
+/* Red background */
+.w3-red {color:#fff!important;background-color:#ef4135!important}
+
+/* Red button */
+.w3-red.w3-button:hover {color:#ef4135!important;background-color:#fff!important}
+
+/* Text shadow */
+.w3-text-shadow {text-shadow: 0 0 0.2em #000}
+
+/* Container for full view window page with background image */
+.w3-display-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-.bgimg {background-image: url("/images/floor.jpg")}
-.bgimg2 {background-image: url("/images/food.jpg")}
+
+/* Background image */
+.bgimg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Top logo */
 .logo {
     min-width: 320px;
     width: 60%;
 }
-.w3-sauce {width:40%;min-width:320px;float:left;margin-right:32px;padding-top: 1em;}
+
+/* Image in about section */
+.w3-about-image {width:40%;min-width:320px;float:left;margin-right:32px;padding-top: 1em;}
+
+/* Add padding-bottom for menu bar */
+.w3-last-padding {
+    padding-bottom: 128px !important;
+}
+
 @media (max-width: 601px) {
 html,body{font-size: 14px;}
 h1{font-size:24px}h2{font-size:20px}h3{font-size:18px}h4{font-size:16px}h5{font-size:14px}h6{font-size:12px}.w3-serif{font-family:serif}
 .w3-xlarge{font-size:16px!important}.w3-xxlarge{font-size:20px!important}.w3-xxxlarge{font-size:28px!important}.w3-jumbo{font-size:36px!important}
-.w3-sauce{
+
+/* Image in about section */
+.w3-about-image{
     width: 100%;
     height: 80vw;
     margin: auto;
     float: none;
     object-fit: cover;
-    object-position: 50% 90%;}
+    object-position: 50% 10%;}
+
+/* Remove padding-bottom */
+.w3-last-padding {
+    padding-bottom: 64px !important;
+}
 }
 .w3-table-center {
     margin: 0 auto;
 }
+

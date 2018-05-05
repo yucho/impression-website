@@ -25,18 +25,17 @@
   "homepage": "https://github.com/yucho/impression-website#readme",
   "dependencies": {
     "clean-css": "^4.1.11",
+    "coffeescript": "^2.2.4",
     "jsonfile": "^4.0.0",
+    "jstransformer-coffeekup": "^0.3.0",
     "jstransformer-eco": "^0.1.0",
     "metalsmith": "^2.3.0",
     "metalsmith-clean-css": "^6.0.0",
+    "metalsmith-collections": "^0.9.0",
     "metalsmith-concat-convention": "^1.2.0",
     "metalsmith-in-place": "^4.1.1",
-    "metalsmith-uglify": "^2.2.0"
-  },
-  "devDependencies": {
-    "coffeescript": "^2.2.4",
+    "metalsmith-jstransformer-partials": "^2.0.0",
     "metalsmith-nestedlayouts": "^2.2.2",
-    "metalsmith-partial": "^0.1.0",
     "metalsmith-serve": "0.0.7",
     "metalsmith-sitemap": "^1.2.0",
     "metalsmith-uglify": "^2.2.0",

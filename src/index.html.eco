@@ -2,17 +2,18 @@
 layout: default.html.eco
 ---
   <!-- Header / Top -->
-  <header class="w3-display-container w3-wide bgimg" id="top">
+  <header class="w3-display-container w3-wide" id="top">
+    <%- @partial 'srcset.html', {imagename: 'floor', attrs: {class: 'bgimg'}} %>
     <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo"><img class="logo" src="images/impression-logo.png" alt="Impression"></h1>
-      <h3>Casual French Dining and Wine Bar</h3>
+      <h1 class="w3-jumbo"><%- @partial 'srcset.html', {imagename: 'impression-logo', attrs: {class: 'logo', alt: 'Impression'}} %></h1>
+      <h3 class="w3-text-shadow">Casual French Dining and Wine Bar</h3>
     </div>
   </header>
 
   <!-- Navbar (sticky bottom) -->
   <div class="w3-bottom w3-hide-small">
-    <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
-      <a href="#top" style="width:25%" class="w3-bar-item w3-button">Top</a>
+    <div class="w3-bar w3-black w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+      <a href="#gallery" style="width:25%" class="w3-bar-item w3-button">Gallery</a>
       <a href="dinner-menu.pdf" style="width:25%" class="w3-bar-item w3-button">Menu</a>
       <a href="#reservation" style="width:25%" class="w3-bar-item w3-button">Reservation</a>
       <a href="#location" style="width:25%" class="w3-bar-item w3-button">Location</a>
@@ -20,10 +21,10 @@ layout: default.html.eco
   </div>
 
   <!-- About / Impression -->
-  <div class="w3-container w3-padding-64 w3-orange" id="about">
+  <div class="w3-container w3-padding-64 w3-grey" id="about">
     <div class="w3-content">
       <h1 class="w3-center w3-wide">The arts</h1>
-      <img class="w3-round w3-sauce" src="images/sauce.jpg">
+      <%- @partial 'srcset.html', {imagename: 'art', attrs: {class: 'w3-round w3-about-image'}} %>
       <p>In France, food and wine are inseparable partners that work together to complete each other. That is why when a good pairing is found, the French celebrates the joyful discovery by saying that the food and wine had <i>"un mariage heureux"</i>, or "a happy marriage." At <i>Impression</i>, however, we do not limit the weddings to occur only between food and wine. The ambiance, our culinarily inclined and friendly staffs, and the most important of all, you and your beloved ones are all part of the equation when it comes to the dining experience we have to offer. Casual, family-friendly, yet elegant, we aim to challenge the status quo that French cuisine is only for the social elites and romantic investments, but rather for anyone who is looking for having a good time, much like how it is in France. Come to us, and we will welcome you with unbelievable sunset view of Half Moon Bay, great food and wine, and perhaps, with sincerity, make the deepest <i>Impression</i> upon you.
       </p><br>
       <p class="w3-center"><a href="dinner-menu.pdf" class="w3-button w3-black w3-round w3-padding-large w3-large">Explore Our Menu</a></p>
@@ -31,23 +32,36 @@ layout: default.html.eco
   </div>
 
   <!-- Background Photo -->
-  <div class="w3-display-container bgimg2">
+  <div class="w3-display-container">
+    <%- @partial 'srcset.html', {imagename: 'bienvenue', attrs: {class: 'bgimg'}} %>
     <div class="w3-display-middle w3-text-white w3-center">
-      <h1 class="w3-jumbo"><b>Bon appétit.</b></h1><br>
+      <h1 class="w3-jumbo w3-text-shadow"><b>Bienvenue.</b></h1><br>
     </div>
   </div>
 
   <!-- Reservation -->
-  <div class="w3-container w3-padding-64 w3-orange w3-center" id="reservation">
+  <div class="w3-container w3-padding-64 w3-grey w3-center" id="reservation">
     <h1 class="w3-wide">Make a reservation</h1>
-    <p>We take reservations both over the phone (650) 560-0318 and through <i>Open Table</i>.</p>
+    <p>We take reservations both over the phone at (650) 560-0318 and through <i>Open Table</i>.</p>
     <script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=1009825&domain=com&type=standard&theme=standard&lang=en&overlay=false&iframe=true'></script>
   </div>
 
+  <!-- Background Photo -->
+  <div class="w3-display-container">
+    <%- @partial 'srcset.html', {imagename: 'food', attrs: {class: 'bgimg'}} %>
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h1 class="w3-jumbo w3-text-shadow"><b>Bon appétit.</b></h1><br>
+    </div>
+  </div>
+
   <!-- Location Info -->
-  <div class="w3-container w3-padding-64 w3-orange w3-center" id="location">
+  <div class="w3-container w3-last-padding w3-padding-64 w3-grey w3-center" id="location">
     <h1 class="w3-wide">Where we are</h1>
     <p>260 Capistrano Rd Half Moon Bay, CA 94019</p>
+
+    <!-- Google map -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101243.75856775389!2d-122.47023632044808!3d37.53462162256731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f73b7d9ba2a17%3A0xe7ef88b817fe7aea!2s260+Capistrano+Rd%2C+Half+Moon+Bay%2C+CA+94019!5e0!3m2!1sen!2sus!4v1525515436894" width="80%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
     <p>(650) 560-0318</p>
     <p><a href="mailto:impression@inshou.group">impression@inshou.group</a></p>
     <p><a href="https://impression.inshou.group">https://impression.inshou.group</a></p>
